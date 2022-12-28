@@ -88,7 +88,7 @@ Passos que fiz para esse projeto:
 - instalar prisma no projeto: `npm i prisma --save-dev`
 - iniciar prisma: `npx prisma init`
 
-Terá um arquivo `prisma/schema.prisma` e será nele que fará os *script`s* de **create(DDL's)**.
+Terá um arquivo `prisma/schema.prisma` e será nele que fará os *script's* de **create(DDL's)**.
 A cada atualização que deseja fazer, terá que gerar uma migration: `npx prisma migrate dev`, vai pedir um nome para a migration.
 
 Utilidade: `npx prisma studio`
@@ -98,4 +98,4 @@ Utilidade: `npx prisma studio`
 Para criar os módulos:
 - `nest g resource <nome-modulo> modules`
 - - **resource**: indica que vai criar toda a informação de *controller*, *service* e *module*.
-- - **modules**: vai criar o módulo dentro da pasta *modules* (*modules/<nome-modulo>*)
+- - **modules**: vai criar o módulo dentro da pasta *modules* (*modules/nome-modulo*)
