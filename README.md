@@ -72,6 +72,30 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 Nest is [MIT licensed](LICENSE).
 
+----
+
+# Sobre minha experiência desse projeto de estudo:
 
 Utilizei [esse vídeo](https://www.youtube.com/watch?v=0Idug0e9tPw) como base para esse projeto.
 E também [esse repositório](https://github.com/FabricaDeSinapse/nestjs-auth) do vídeo de [Paulo Salvatore](https://www.youtube.com/watch?v=3z6Cs_PtYc0).
+
+Passos que fiz para esse projeto:
+- instalar o CLI do NestJs: `npm i -g @nestjs/cli`
+- iniciar projeto: `nest new project-name`
+
+### Prisma:
+É uma alternativa para escrever os SQL's e contudo, gerar os ORM's.
+- instalar prisma no projeto: `npm i prisma --save-dev`
+- iniciar prisma: `npx prisma init`
+
+Terá um arquivo `prisma/schema.prisma` e será nele que fará os *script`s* de **create(DDL's)**.
+A cada atualização que deseja fazer, terá que gerar uma migration: `npx prisma migrate dev`, vai pedir um nome para a migration.
+
+Utilidade: `npx prisma studio`
+- Serve para poder visualizar as tabelas com os dados do banco. Nesse projeto foi utilizado SQLite.
+
+### Nest:
+Para criar os módulos:
+- `nest g resource <nome-modulo> modules`
+- - **resource**: indica que vai criar toda a informação de *controller*, *service* e *module*.
+- - **modules**: vai criar o módulo dentro da pasta *modules* (*modules/<nome-modulo>*)
