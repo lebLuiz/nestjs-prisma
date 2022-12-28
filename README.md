@@ -73,4 +73,5 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 Nest is [MIT licensed](LICENSE).
 
 
-Utilizei [esse vídeo](https://www.youtube.com/watch?v=0Idug0e9tPw) como base para esse projeto
+Utilizei [esse vídeo](https://www.youtube.com/watch?v=0Idug0e9tPw) como base para esse projeto.
+E também [esse repositório](https://github.com/FabricaDeSinapse/nestjs-auth) do vídeo de [Paulo Salvatore](https://www.youtube.com/watch?v=3z6Cs_PtYc0).

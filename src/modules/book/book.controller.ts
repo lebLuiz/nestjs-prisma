@@ -1,10 +1,17 @@
 import { Body, Controller, Delete, Get, Param, Post, Put } from '@nestjs/common';
-import { BookDTO } from './book.dto';
+import { BookDTO } from 'src/types/types/book.dto';
 import { BookService } from './book.service';
 
 @Controller('book')
 export class BookController {
   constructor(private readonly bookService: BookService) {}
+
+  /*
+  * Qual a necessidade de utilizar `async` nas chamadas das funções?
+  * R: Pelo fato do BookService retornar uma Promise.
+  * Como eu estou já dando um return direto, eu não preciso colocar `return await this.bookService.create(data);` ...
+  * O await fica "oculto" nesse caso!
+  */
 
   @Post()
   async create(@Body() data: BookDTO) {
